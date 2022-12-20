@@ -44,6 +44,7 @@ box-sizing: border-box;
 {
     background-color: #fefefe;
     
+    
 }
 .row
 {
@@ -68,6 +69,7 @@ box-sizing: border-box;
 .bloc
 {
     padding:25px;
+    font-size: 20px;
 }
 
 .bloc button
@@ -75,6 +77,9 @@ box-sizing: border-box;
     border: 3px solid rgb(red, green, blue);
     border-radius: 5px;
     cursor: pointer;
+    font-size:20Px;
+    
+    
 }
 
 .bloc button:hover
@@ -99,10 +104,11 @@ box-sizing: border-box;
 
 .parent {
     padding: 40px 0 40px 0;
+    margin: 0 160px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px;
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-areas: 
     "event nightlife shopping"
     "food sleep article";
