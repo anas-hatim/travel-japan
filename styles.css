@@ -1,0 +1,179 @@
+
+/* GENERAL */
+*
+{
+box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "ZenDots-Regular" ;
+    src: url("assets/ZenDots-Regular.ttf");
+}
+/* MAIN IMAGE */
+#main-image
+{
+    height: 500px;
+    background: url(assets/image-1.jpg) center ;
+    background-size: cover;
+
+}
+
+
+
+#main-image h2
+{
+    font-family:"ZenDots-Regular" ;
+    color: #ffff;
+    font-size:  50px ;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 150px 0 40px 0;
+    margin-bottom: 0px;
+    animation: scale ;
+    
+}
+/* PARAGRAPHE */
+#paragraphe p
+{
+    color: rgb(39, 39, 42);
+    margin: 50px 0 50px 0;
+    text-align: center;
+}
+/* possibilities */
+#possibilities
+{
+    background-color: #fefefe;
+    
+}
+.row
+{
+    display: flex;
+    width: 100vw;
+}
+
+.row:nth-child(even)
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.pic,.bloc
+{
+    width: 50vw;
+
+}
+.pic img
+{
+    width: 100%;
+}
+.bloc
+{
+    padding:25px;
+}
+
+.bloc button
+{
+    border: 3px solid rgb(red, green, blue);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bloc button:hover
+{
+    background-color:rgb(255, 0, 89);
+    transition: 1s;
+    transform: scale() (45deg);
+}
+
+.presentation p
+{
+    font-size: 20px;
+    letter-spacing: 3px;
+    width: 100vw;
+    padding: 6vw;
+    background-color: rgb(225, 225, 225);
+    background : cover;
+
+}
+
+/* GRILLE */
+
+.parent {
+    padding: 40px 0 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "event nightlife shopping"
+    "food sleep article";
+   
+    }
+
+    .parent img {
+        width: 100%;
+        height: 75%;
+    }
+
+    .div1 {
+        grid-area: event;
+    }
+    .div2 {
+        grid-area: nightlife;
+    }
+    .div3 {
+        grid-area: shopping;
+    }
+    .div4 {
+        grid-area: food;
+    }
+    .div5 {
+        grid-area: sleep;
+    }
+    .div6 {
+        grid-area: article;
+    }
+
+    .parent p
+    {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 8px;
+
+    }
+
+    .emergency
+    { 
+        font-size: 30px;
+        color: #fefefe;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        background-color: rgb(192, 3, 56);
+    }
+    .first,.numbers
+    {
+    width: 50vw;
+
+    }   
+    .numbers{
+        padding: top 50px;
+    }
+
+    .copyright
+    {
+        text-align: center;
+        font-size: 30px;
+     letter-spacing: 3px;
+       width: 100vw;
+      padding: 6vw;
+        ;
+          background : cover;
+    }
+
+    .guidefooter
+    {
+        text-align: center;
+    
+        
+    }
+    
